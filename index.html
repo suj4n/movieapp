@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie App</title>
+  </head>
+  <body>
+    <header>
+      <span id="home-link" class="logo" style="cursor:pointer;align-self:center;margin-right:auto;font-weight:bold;font-size:1.2rem;color:#fff;">Movie App</span>
+      <form id="form">
+        <input type="text" id="search" class="search" placeholder="Search">
+        <input type="number" id="year" class="search" placeholder="Year" min="1900" max="2099">
+        <select id="genre" class="search">
+          <option value="">Genre</option>
+        </select>
+        <input type="text" id="actor" class="search" placeholder="Actor">
+        <input type="text" id="director" class="search" placeholder="Director">
+        <button type="submit" id="search-btn" class="search-btn" aria-label="Search">
+          <svg height="20" width="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="9" cy="9" r="7" stroke="#7378c5" stroke-width="2"/>
+            <line x1="14.2" y1="14.2" x2="18" y2="18" stroke="#7378c5" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </form>
+    </header>
+
+    <main id="main"></main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
